@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+</head>
+
+<body ng-app>
+    <h1>Angular JS Demo</h1>
+    <input ng-init="pr=0" ng-model="pr" type="text" placeholder="Type Price Here"> Price is {{pr}}
+    <br>
+    <input ng-init="qt=0" ng-model="qt" type="text" placeholder="Type Quantity Here"> Amount is Quantity is {{qt}}
+    <br> Amount is {{pr*qt|currency:'&#08377;'}}
+</body>
+
+</html>
